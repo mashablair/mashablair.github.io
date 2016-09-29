@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- saved from url=(0097)https://storage.googleapis.com/supplemental_media/udacityu/2730818600/bootstrap-prestructure.html -->
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- added by Jacques -->
+  <!-- To ensure proper rendering and touch zooming, add the viewport meta here:  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap Portfolio</title> <!-- added by Jacques -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script> <!-- Google CDN for my Modals - I'm using this one instead of the one I downloaded -->
+
+  <script src="js/bootstrap.min.js"></script>
+
+  <!-- icons:  -->
+  <link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=zocial">
+
+  <!-- ISSUE with zocial icons: when I pushed code on GitHub, they disappeared b/c GitHub requires https link.  I tried these <links> but they didn't work...  Issue to be solved. -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.0.0/bootstrap-social.min.css" /> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/css-social-buttons/1.2.0/css/zocial.min.css" /> -->
+
+  </head>
+
+
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="maria.jpg" class="title-logo" alt="Logo" width="140" height="200" >
+        </div>
+        <div class="col-md-6 text-right text-uppercase"">  <!-- Makes our text aligned to the right and uppercased! -->
+          <h1 class="title-super text-thin">Maria Blair</h1>
+          <h4>Front-end Ninja</h4>
+        </div>
+      </div>
+
+      <div class="row">
+          <div class="col-md-12"><hr style="border: none; border-bottom: 2px solid #bcbbbb;"></div>
+      </div>
+
+      <div class="row">
+        <!-- <img src="http://placekitten.com/1200/550"> -->
+        <div class="col-md-12"><img src="image-main.jpeg" alt="Big Central Image" class="img-responsive"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12"><h2 class="text-muted">Featured Work<hr style="border: none; border-bottom: 2px solid #bcbbbb;"></h2></div>
+      </div>
+
+      <!-- First Project -->
+
+      <div class="row text-center">
+        <div class="col-md-6">
+          <!-- <img src="http://placekitten.com/555/300" -->
+          <img src="arcade-game-img.png" class="img-responsive" alt="1st Small Picture" data-toggle="modal" data-target="#project1">
+          <h3 class="text-uppercase">Arcade Frogger Game</h3>
+          <p><a href="https://mashablair.github.io/arcade-game/">Link to project</a></p>
+        </div>
+
+        <!-- Second Project -->
+
+        <div class="col-md-6">
+          <img src="online-resume.png" class="img-responsive" alt="2nd Small Picture" data-toggle="modal" data-target="#project2">
+          <h3 class="text-uppercase">Online Resume</h3>
+          <p><a href="https://mashablair.github.io/frontend-nanodegree-resume/">Link to project</a></p>
+        </div>
+      </div>
+
+      <!-- Third Project -->
+
+      <div class="row text-center">
+        <div class="col-md-6">
+          <img src="accelerate.png" class="img-responsive" alt="3rd Small Picture" data-toggle="modal" data-target="#project3">
+          <h3 class="text-uppercase">WordPress Site</h3>
+          <p><a href="https://github.com/mashablair/accelerate">Link to project</a></p>
+        </div>
+
+        <!-- Fourth Project -->
+
+        <div class="col-md-6">
+          <img src="battleship.png" class="img-responsive" alt="4th Small Picture" data-toggle="modal" data-target="#project4">
+          <h3 class="text-uppercase">Battleship Game</h3>
+          <p><a href="https://mashablair.github.io/battleship-game/">Link to project</a></p>
+        </div>
+
+      </div>
+
+      <!-- Fifth Project -->
+      <div class="row text-center">
+        <div class="col-md-6">
+          <img src="web-optim.png" class="img-responsive" alt="5th Small Picture" data-toggle="modal" data-target="#project5">
+          <h3 class="text-uppercase">Web Optimization</h3>
+          <p><a href="https://github.com/mashablair/web-perf-optimization">Link to project</a></p>
+        </div>
+
+        <!-- Sixth Project -->
+
+<!--         <div class="col-md-6">
+          <img src="battleship.png" class="img-responsive" alt="6thth Small Picture" data-toggle="modal" data-target="#project4">
+          <h3 class="text-uppercase">Battleship Game</h3>
+          <p><a href="https://mashablair.github.io/battleship-game/">Link to project</a></p>
+        </div>
+
+      </div> -->
+    </div>
+
+    <!-- Modal 1 -->
+    <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Arcade Frogger Game Project</h4>
+                </div>
+                <div class="modal-body">
+                    <img src="arcade-game-img.png" class="img-responsive" alt="1st Small Picture" data-toggle="modal" data-target="#project1">
+                    Developed a game as my 5th project for the Udacity Front-End Web Dev nanodegree. The goal was to create a classic arcade frogger game using the newly acquired skills in Object Oriented JS and HTML5 Canvas. Images and a game loop engine were provided. The rest was built in app.js file.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END of modal 1 -->
+
+    <!-- Modal 2 -->
+    <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Online Resume Project/h4>
+                </div>
+                <div class="modal-body">
+                    <img src="online-resume.png" class="img-responsive" alt="1st Small Picture" data-toggle="modal" data-target="#project2">
+                    Using JavaScript and jQuery, developed an interactive resume application that reads all data from a JSON file and then dynamically modifies the DOM to display the information. Further customized the project by personalizing the design using CSS. I'm using Google Maps and Twitter APIs to display the interractive map of the places I've lived and worked, as well as my Twitter account feed.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END of modal 2 -->
+
+    <!-- Modal 3 -->
+    <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">WordPress Site Project</h4>
+                </div>
+                <div class="modal-body">
+                    <img src="accelerate.png" class="img-responsive" alt="1st Small Picture" data-toggle="modal" data-target="#project2">
+                    Using WordPress, built and customized a website for an imaginary marketing company. Imported their blog, fixed the imported images. Configured WP theme and widget area, created a child theme. Created Case Studies using Custom Post Type, installed Advanced Custom Fields and displayed them on my pages. Added case studies to the homepage and created custom archive, added featured work to the homepage.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END of modal 3 -->
+
+    <!-- Modal 4 -->
+    <div class="modal fade" id="project4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Battleship Game Project</h4>
+                </div>
+                <div class="modal-body">
+                    <img src="battleship.png" class="img-responsive" alt="1st Small Picture" data-toggle="modal" data-target="#project2">
+                   Developed a classic Battleship Game as a project for the Head First JavaScript Programming class. Used JavaScript and object-oriented design. Built a grid with HTML and CSS and placed it on top of the background image to create a functional board. Structured JS code according to the MVC model for more efficient organization and testing.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END of modal 4 -->
+
+    <!-- Modal 5 -->
+
+    <div class="modal fade" id="project5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Web Optimization Project</h4>
+                </div>
+                <div class="modal-body">
+                    <img src="web-optim.png" class="img-responsive" alt="1st Small Picture" data-toggle="modal" data-target="#project2">
+                   Optimized performance and browser rendering of this very troublesome portfolio site in terms of critical rendering path and frames per second (FPS).  Used several technologies and JavaScript refactoring.  Using Grunt, I optmized images by resizing and compressing, and minified JS for all sites. Optimized fonts and asynchronized loading of JS.  Improved Google PageSpeed Insights score from 23/100 to 95/100 for mobile and 97/100 for desktop for the main site.  Optimized Cam's Pizzeria site to render at 60 FPS when scrolling and resizing pizza images in under 5ms. Used Chrome's Dev Tools Timeline to measure and record performance.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12"><hr style="border: none; border-bottom: 2px solid #bcbbbb;"></div>
+    </div>
+
+  <footer>
+
+    <div id="social">
+      <!-- To open links in the new tab, add target="_blank" attribute -->
+      <a href="https://www.linkedin.com/in/mariaklachkoblair" class="zocial-linkedin" target="_blank">LinkedIn</a>
+      <a href="https://twitter.com/mashablair" class="zocial-twitter" target="_blank">Twitter</a>
+      <a href="https://www.facebook.com/Masha.Blair" class="zocial-facebook" target="_blank">Facebook</a>
+      <!-- <a href="https://plus.google.com/share?url=https://github.com/udacity/responsive-images" class="zocial-googleplus">Google+</a> -->
+    </div>
+
+    <a href="https://github.com/mashablair/main-portfolio" title="View source for this page on GitHub" id="viewSource" target="_blank">View source on GitHub</a>
+
+  </footer>
+
+  </body>
+  </html>
+
+
