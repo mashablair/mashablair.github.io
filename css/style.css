@@ -71,3 +71,13 @@ footer {
     background-color: #EEEEEE;
     padding-top: 20px
 }
+
+div#contact {
+  border-top: 1px solid #ddd;
+  display: block;
+  margin: 1.3em 0 0 0;
+  padding: 1em 0 0 0;
+  color: #4183C4;
+  font-weight: 300;
+  text-decoration: none;
+}
