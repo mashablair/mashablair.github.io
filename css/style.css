@@ -4,6 +4,46 @@ body {
     font-weight: 300;
 }
 
+.big-image:hover {
+/*    opacity:0.80;
+    filter:alpha(opacity=80);
+    -webkit-backface-visibility:hidden*/
+    /*filter:hue-rotate(120deg);*/
+    filter:saturate(2) drop-shadow(20px 20px 20px grey);
+    /*filter:drop-shadow(8px 8px 10px grey);*/
+}
+
+#wow {
+  position: relative;
+}
+#welcomeText {
+  position: absolute;
+  top: 42%;
+    /*bottom: 100px;*/
+  left: 42%;
+    /*right: 100px;*/
+  color: #E1F5FE;
+  font-size: 3em;
+  drop-shadow(20px 20px 20px white);
+
+  visibility: hidden;
+  opacity: 0;
+
+  -webkit-transition: visibility opacity 0.5s;
+}
+
+#wow:hover #welcomeText {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+
+.opacity:hover {
+  filter:saturate(1.5) drop-shadow(20px 20px 20px grey);
+  cursor:pointer;
+}
+
 .text-muted {
     color: #bcbbbb;
 }
@@ -81,3 +121,5 @@ div#contact {
   font-weight: 300;
   text-decoration: none;
 }
+
+
